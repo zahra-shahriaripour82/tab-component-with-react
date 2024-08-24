@@ -36,6 +36,12 @@ function App() {
           >
             Tab 3
           </li>
+          <li
+            className={`tabs ${getActiveClass(4, "active-tabs")}`}
+            onClick={() => toggleTab(4)}
+          >
+            Tab 4
+          </li>
         </ul>
         <div className="content-container">
           <div className={`content ${getActiveClass(1, "active-content")}`}>
@@ -45,6 +51,9 @@ function App() {
             <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat consectetur recusandae magni deleniti minima vel sint rem unde aperiam ipsum laudantium nemo nesciunt voluptatibus porro provident, nihil animi tenetur ratione!</h2>
           </div>
           <div className={`content ${getActiveClass(3, "active-content")}`}>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error distinctio, debitis veniam eaque unde mollitia cumque aut, voluptatum, cum inventore repellendus omnis voluptate nihil accusantium sint deserunt nulla nisi? Fugit!</h2>
+          </div>
+          <div className={`content ${getActiveClass(4, "active-content")}`}>
             <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error distinctio, debitis veniam eaque unde mollitia cumque aut, voluptatum, cum inventore repellendus omnis voluptate nihil accusantium sint deserunt nulla nisi? Fugit!</h2>
           </div>
         </div>
